@@ -1,0 +1,42 @@
+<div class="container mt-4">
+    <div class="d-flex justify-content-between">
+        <h3>Add Proudct</h3>
+        <button type="button" class="btn btn-secondary" (click)="backToList()">Back To List</button>
+    </div>
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="card mt-3">
+                <div class="card-body">
+                    <form [formGroup]="productFormGroup">
+                        <div class="form-group">
+                            <label>Product Name</label>
+                            <input type="text" class="form-control"
+                                [formControl]="productFormGroup.controls.productName"
+                                [ngClass]="{'is-invalid':productFormGroup.controls.productName.invalid}">
+                        </div>
+                        <div class="form-group">
+                            <label>Product Category</label>
+                            <input type="text" class="form-control"
+                                [formControl]="productFormGroup.controls.productCategory"
+                                [ngClass]="{'is-invalid':productFormGroup.controls.productCategory.invalid}">
+                        </div>
+                        <div class="form-group">
+                            <label>Product Price</label>
+                            <input type="text" class="form-control"
+                                [formControl]="productFormGroup.controls.productPrice"
+                                [ngClass]="{'is-invalid':productFormGroup.controls.productPrice.invalid}">
+                        </div>
+                        <div class="mt-2">
+                            <button type="button" *ngIf="!product" class="btn btn-success"
+                                (click)="onSubmit()">Submit</button>
+                            <button type="button" *ngIf="product" class="btn btn-primary"
+                                (click)="onUpdate()">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-toast></p-toast>

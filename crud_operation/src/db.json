@@ -1,0 +1,28 @@
+{
+  "product": [
+    {
+      "id": "b01a",
+      "productName": "Samsung S23",
+      "productCategory": "Mobile",
+      "productPrice": "40000"
+    },
+    {
+      "id": "cb5f",
+      "productName": "Realme 9",
+      "productCategory": "Mobile",
+      "productPrice": "700"
+    },
+    {
+      "id": "aab8",
+      "productName": "Iphone 12",
+      "productCategory": "Mobile",
+      "productPrice": "2000"
+    },
+    {
+      "id": "0331",
+      "productName": "Iphone 15",
+      "productCategory": "Mobile",
+      "productPrice": "2000"
+    }
+  ]
+}
